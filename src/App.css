@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px; /* Für mobilfreundliche Breite */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  button {
+    width: 80px;  /* Kleinere Buttons auf Mobilgeräten */
+    font-size: 16px;  /* Kleinere Schriftgröße */
+  }
+
+  p {
+    font-size: 16px;  /* Kleinere Schrift auf Mobilgeräten */
+  }
+}
