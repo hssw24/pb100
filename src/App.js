@@ -32,8 +32,8 @@ function App() {
       }
     }
 
-    // Zufälliges Mischen der richtigen und falschen Antworten
-    const allOptions = [...incorrectOptions, correctAnswer].sort(() => Math.random() - 0.5);
+    // Sortiere die Optionen aufsteigend
+    const allOptions = [...incorrectOptions, correctAnswer].sort((a, b) => a - b);
     setOptions(allOptions);
   };
 
